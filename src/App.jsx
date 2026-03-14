@@ -115,6 +115,8 @@ return (
 
 
 <footer className={styles.appFooter}>
+    <p>&copy; Marzo 2026 <strong>Aldana Rodriguez</strong>. 
+    Todos los derechos reservados.</p>
     <p>Popcorn icon created by <a href="https://www.flaticon.com" title="salty icons" target="_blank" rel="noreferrer">Maan Icons - Flaticon</a></p>
 </footer>
     </div>

@@ -156,7 +156,10 @@
     padding: 2rem;
     color: #ffffffb3;
     font-size: 0.8rem;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
 }
+
 .appFooter a {
     color: #cccccc; 
     text-decoration: none; 
@@ -166,7 +169,7 @@
 
 .appFooter a:hover {
     color: #ffffff; 
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 /*DISEÑO RESPONSIVO -- Ajustes para PC y Tablets -- */
