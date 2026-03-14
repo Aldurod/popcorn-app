@@ -1,0 +1,95 @@
+/* estilos de pelis en lista de favritos*/
+.movieItem{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff11;
+    backdrop-filter: blur(10px);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ffffff33;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    align-items: center;
+    list-style: none;
+}
+
+.movieItem:hover {
+    background-color: #ffffff33; 
+    transform: translateY(-5px);
+    border-color: #ffffff80;
+}
+
+.movieItem img{
+    width: 120px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.movieInfo{
+    flex: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.movieInfo strong{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.movieInfo p {
+    font-size: 0.8rem;
+    color: #ffffffce;
+    margin: 0;
+}
+
+/*contenedor de estados y eliminar */
+.movieActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.statusContainer {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.statusContainer:hover {
+    opacity: 0.8;
+}
+
+.statusWatched{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #d8ecfd;
+}
+
+.statusPending{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #f099fc;
+}
+
+.deleteBtn{
+    background: none;
+    border: none;
+    color: #fd8c95;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.deleteBtn:hover {
+    background-color: #ff4d4d33;
+}

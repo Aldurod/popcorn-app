@@ -1,0 +1,184 @@
+/* contenedor principal de la app */
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+} 
+
+/*sección del título y encabezado */
+.headerSection {
+    margin-bottom: 2rem;
+} 
+
+.brandGroup h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.appLogo{
+    width: 64px;
+    height: auto;
+    filter: drop-shadow(0 3px 8px #0000004d);
+}
+
+/* div del buscador */
+.searchGroup {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+} 
+
+/*sección al encontrar película */
+.previewSection {
+    display: flex;
+    margin: 2rem 0;
+    padding: 3rem;
+    background-color: #376b99b2;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+} 
+
+/*estilo de icono de Lucide*/
+.exitIcon {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+} 
+
+/*card póster y  datos*/
+.previewCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+} 
+
+.posterPreview{
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*contenedor de texto de la preview */
+.previewData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+} 
+
+/*linea que divide buscador de lista */
+.separator{
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ffffff33, transparent);
+    margin: 2rem 0;
+    width: 100%;
+}
+
+/*btn agregar*/
+.btnAdd{
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    background-color: #ffffff1A;
+    color: #ffffff;
+    border: 2px solid #ffffff33;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: background-color 0.2s ease;
+}
+
+.btnAdd:hover {
+    background-color: #ffffff33; 
+}
+
+/*contenedor de la lista */
+.listSection {
+    flex: 1;
+    width: 100%;
+    margin-top: 1rem;
+} 
+
+/*encabezado de lista favoritos */
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff1A;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} 
+
+.listHeader:hover {
+    background-color: #ffffff33;
+} 
+
+.titleGroup{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*footer y creditos */
+.appFooter{
+    text-align: center;
+    margin-top: auto;
+    padding: 2rem;
+    color: #ffffffb3;
+    font-size: 0.8rem;
+}
+.appFooter a {
+    color: #cccccc; 
+    text-decoration: none; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.appFooter a:hover {
+    color: #ffffff; 
+    text-decoration: underline; 
+}
+
+/*DISEÑO RESPONSIVO -- Ajustes para PC y Tablets -- */
+@media (min-width: 768px) {
+    .previewCard {
+        justify-content: flex-start;
+    }
+    .posterPreview {
+        margin: 0;
+    }
+    .previewData {
+        align-items: flex-start; 
+        text-align: left;        
+    }
+}

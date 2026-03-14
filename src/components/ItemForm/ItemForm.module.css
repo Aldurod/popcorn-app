@@ -1,0 +1,42 @@
+/*contenedor de buscador estilo pildora */
+.formContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ffffff1a;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #ffffff4d;
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.5s ease;
+}
+
+.formContainer:focus-within {
+  background-color: #ffffff26;
+  border-color: #ffffff80;
+  box-shadow: 0 0 20px #ffffff1a;
+}
+
+.searchIcon {
+  color: #ffffffb3;
+  flex-shrink: 0;
+}
+
+.inputSearch{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 2rem;
+}
+
+.inputSearch::placeholder{
+  color: #ffffffb3;
+  opacity: 1;
+  font-size: 0.9rem;
+}
