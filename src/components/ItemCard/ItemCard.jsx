@@ -7,7 +7,7 @@ const ItemCard = ({movie, onDelete,onToggleStatus}) => {
 
 //manejo de rror para img rotas
     const handleImgError = (e) => {
-        e.target.src = '/no-poster.png'; 
+        e.target.src = 'no-poster.png'; 
     };
 
 return (

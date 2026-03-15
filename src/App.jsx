@@ -28,7 +28,7 @@ function App (){
 },[]);
 
     const handleImgError = (e) => {
-        e.target.src = '/no-poster.png'; // Ruta de tu logo en la carpeta public
+        e.target.src = 'no-poster.png'; // Ruta de tu logo en la carpeta public
     };
 
 
@@ -40,7 +40,7 @@ const handleAdd = async () => {
             name: preview.title,
                 image: preview.poster_path 
                 ? `https://image.tmdb.org/t/p/w200${preview.poster_path}` 
-                : '/no-poster.png',
+                : 'no-poster.png',
                 date: preview.release_date || "Sin Especificar",
                 description: preview.overview || "Sin Detalles",
                 status: "Pendiente"
@@ -65,7 +65,7 @@ return (
     <div className={styles.appContainer}>
         <header className={styles.headerSection}>
             <div className={styles.brandGroup}>
-                <img src="/favicon.png" alt="logo" className={styles.appLogo} />
+                <img src="favicon.png" alt="logo" className={styles.appLogo} />
                 <h1>Mis Pelis Popcorn</h1>
             </div>
                 <div className={styles.searchGroup}>
@@ -80,7 +80,7 @@ return (
             <div className={styles.previewCard}>
 <img 
     className={styles.posterPreview} 
-    src={preview.poster_path ? `https://image.tmdb.org/t/p/w200${preview.poster_path}` : '/no-poster.png'} 
+    src={preview.poster_path ? `https://image.tmdb.org/t/p/w200${preview.poster_path}` : 'no-poster.png'} 
     alt="poster" 
     onError={handleImgError} 
 /> 
